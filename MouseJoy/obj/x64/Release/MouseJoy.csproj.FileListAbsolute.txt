@@ -1,0 +1,17 @@
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\MouseJoy.exe.config
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\MouseJoy.exe
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\MouseJoy.pdb
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\SharpDX.dll
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\SharpDX.XInput.dll
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\SharpDX.pdb
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\SharpDX.XInput.pdb
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\bin\x64\Release\SharpDX.XInput.xml
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.csproj.AssemblyReference.cache
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.g.resources
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.Form1.resources
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.Properties.Resources.resources
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.csproj.GenerateResource.cache
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.csproj.CoreCompileInputs.cache
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.csproj.Up2Date
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.exe
+C:\Users\Ariel\source\repos\MouseJoy\MouseJoy\obj\x64\Release\MouseJoy.pdb
