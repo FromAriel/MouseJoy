@@ -36,7 +36,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::MouseJoy.Properties.Resources.mousejoy;
-            this.pictureBox1.Location = new System.Drawing.Point(386, 204);
+            this.pictureBox1.Location = new System.Drawing.Point(386, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(190, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -13,10 +13,14 @@ namespace MouseJoy
         public static volatile string LeftClickAssignment = "X"; // Default for left click
         public static volatile string RightClickAssignment = "A"; // Default for right click
         public static volatile string MiddleClickAssignment = "Y"; //Defualt for Middle click
+        public static int scrollmult { get; set; } = 14; // Default value
+
         private static Controller controller;
         static bool isControlEnabled = true;
         private static Form1 mainForm;
         private static int baseMouseSpeed = 20;
+        private const int WHEEL_DELTA = 120;
+
         private static ButtonStateTracker leftClickTracker = new ButtonStateTracker(LeftClickAssignment);
         private static ButtonStateTracker rightClickTracker = new ButtonStateTracker(RightClickAssignment);
         private static ButtonStateTracker middleClickTracker = new ButtonStateTracker(MiddleClickAssignment);
@@ -96,6 +100,9 @@ namespace MouseJoy
 
                         MoveMouseBasedOnThumbstick(gamepad.LeftThumbX, gamepad.LeftThumbY, gamepad.LeftTrigger, gamepad.RightTrigger);
 
+                        // Handle right stick for scrolling
+                        HandleRightStickForScrolling(gamepad); // Pass the entire gamepad object
+
                         HandleDPad(gamepad.Buttons);
                         HandleSpecialButtons(gamepad.Buttons);
                     }
@@ -106,7 +113,25 @@ namespace MouseJoy
         }
 
 
-        static void UpdateDeadzoneBasedOnInitialInput(Controller controller)
+            static void HandleRightStickForScrolling(Gamepad gamepad)
+            {
+                const int deadzone = 5000;
+                const int sensitivity = 12000;
+
+        // Directly subtract the deadzone before dividing for sensitivity adjustment
+        int scrollSpeed = (int)((gamepad.RightThumbY - deadzone) / sensitivity); // Adjust the divisor for desired sensitivity
+
+                // This condition checks for any significant scroll speed to initiate scrolling
+                if (Math.Abs(scrollSpeed) > 0)
+                {
+                    // Convert the scroll speed into a mouse wheel movement
+                    mouse_event(MOUSEEVENTF_WHEEL, 0, 0, (uint)(scrollSpeed * scrollmult), 0); // Multiplication by 14 for fine-tuning
+                }
+            }
+
+
+
+            static void UpdateDeadzoneBasedOnInitialInput(Controller controller)
         {
             if (!controller.IsConnected) return;
 
@@ -222,6 +247,8 @@ namespace MouseJoy
         private const byte VK_RETURN = 0x0D;
         private const byte VK_ESCAPE = 0x1B;
         private const uint KEYEVENTF_KEYUP = 0x0002;
+        private const uint MOUSEEVENTF_WHEEL = 0x0800;
+
     }
 
     class ButtonStateTracker

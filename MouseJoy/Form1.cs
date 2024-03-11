@@ -16,6 +16,9 @@ namespace MouseJoy
         private Label labelLeftClick;
         private Label labelRightClick;
         private Label labelMiddleClick;
+        private Label labelScrollMult;
+        private NumericUpDown numericUpDownScrollMult;
+
 
         public Form1()
         {
@@ -31,8 +34,8 @@ namespace MouseJoy
         {
             RichTextBox instructionTextBox = new RichTextBox
             {
-                Location = new Point(10, 200), // Adjust the location as needed
-                Size = new Size(300, 250), // Adjust the size as needed
+                Location = new Point(10, 210), // Adjust the location as needed
+                Size = new Size(560, 260), // Adjust the size as needed
                 Text = "",
                 Multiline = true,
                 ReadOnly = true,
@@ -48,17 +51,48 @@ namespace MouseJoy
             // Reset the font style for the rest of the text and append it
             instructionTextBox.SelectionFont = new Font(instructionTextBox.Font.FontFamily, 10, FontStyle.Regular); // Change to desired size and style
             instructionTextBox.AppendText(
-                "- Left Trigger: Speed up mouse" + Environment.NewLine + Environment.NewLine +
+                "- Left Trigger: Speed up mouse" + Environment.NewLine + 
                 "- Right Trigger: Slow down mouse" + Environment.NewLine + Environment.NewLine +
                 "- D-pad: Arrow keys" + Environment.NewLine + Environment.NewLine +
-                "- Start: Enter key" + Environment.NewLine + Environment.NewLine +
+                "- Start: Enter key" + Environment.NewLine +
                 "- Select: Esc key" + Environment.NewLine + Environment.NewLine +
                 "- Start + Select Enable or Disable Joystick control" + Environment.NewLine +
-                "    (enabled by default)");
+                "    (enabled by default)" + Environment.NewLine + Environment.NewLine +
+                "the Right Thumbstick acts as a mousescroll where the cursor hovers over or has focus.");
 
             this.Controls.Add(instructionTextBox);
         }
 
+        private void InitializeScrollMultControls()
+        {
+            // Label for the Mouse Scroll Multiplier
+            labelScrollMult = new Label();
+            labelScrollMult.Text = "Mouse Scroll Mult:";
+            labelScrollMult.Location = new Point(270, 40); // Adjust the location according to your layout
+            labelScrollMult.AutoSize = true;
+            this.Controls.Add(labelScrollMult);
+
+            // NumericUpDown for adjusting the Mouse Scroll Multiplier
+            numericUpDownScrollMult = new NumericUpDown();
+            numericUpDownScrollMult.Location = new Point(280, 60); // Adjust the location next to the label
+            numericUpDownScrollMult.Size = new Size(40, 20); // Adjusted size for up to 3 digits
+            numericUpDownScrollMult.Minimum = 1; // Set a sensible minimum value
+            numericUpDownScrollMult.Maximum = 100; // Set a sensible maximum value
+            numericUpDownScrollMult.Value = 14; // Default value for scrollmult
+            numericUpDownScrollMult.DecimalPlaces = 0; // No decimal places, as scrollmult is an integer
+            numericUpDownScrollMult.Increment = 1; // Adjust step size
+            this.Controls.Add(numericUpDownScrollMult);
+
+            // Event handler for value change
+            numericUpDownScrollMult.ValueChanged += new EventHandler(numericUpDownScrollMult_ValueChanged);
+        }
+
+
+
+        private void numericUpDownScrollMult_ValueChanged(object sender, EventArgs e)
+        {
+            Program.scrollmult = Convert.ToInt32(numericUpDownScrollMult.Value);
+        }
 
 
 
@@ -181,6 +215,7 @@ namespace MouseJoy
         private void Form1_Load(object sender, EventArgs e)
         {
             InitializeInstructionTextBox();
+            InitializeScrollMultControls();
 
         }
 
