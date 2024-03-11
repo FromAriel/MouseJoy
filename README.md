@@ -16,4 +16,5 @@ Download the program from this link and run https://github.com/FromAriel/MouseJo
 - **Select** is Esc Key
 - **Start + Select** to enable / disable mouse control (Defualt = On)
 
-![image](https://github.com/FromAriel/MouseJoy/assets/52693758/241b7534-4fb2-4e31-afe3-f6fd82354437)
+![image](https://github.com/FromAriel/MouseJoy/assets/52693758/5f8a952c-7278-4653-8ee1-af54fef4a741)
+
