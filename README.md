@@ -1,9 +1,11 @@
 # MouseJoy
 **MouseJoy lets you use your Xbox controller as a mouse with configurable buttons deadzone and dynamic mouse speed**
 
-This program is offered under https://choosealicense.com/licenses/cc0-1.0/
+> [!IMPORTANT]
+>This program is offered under https://choosealicense.com/licenses/cc0-1.0/
 
-Download the program from this link and run [https://github.com/FromAriel/MouseJoy/blob/main/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip](https://github.com/FromAriel/MouseJoy/blob/6d98a247f9fcab87ae184cebe5c595648594a4f5/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip)
+Download the program by right clicking and saving this link then extract and run [https://github.com/FromAriel/MouseJoy/blob/main/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip](https://github.com/FromAriel/MouseJoy/blob/6d98a247f9fcab87ae184cebe5c595648594a4f5/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip)
+> No intaller needed it runs from the extracted location.
 
 ## Controls are pretty self explanatory.
 
