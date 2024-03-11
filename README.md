@@ -1,5 +1,5 @@
 # MouseJoy
-**MouseJoy lets you use your Xbox controller as a mouse with configurable buttons deadzone and dynamic mouse speed**
+### MouseJoy: Use your Xbox controller as a mouse! Configurable buttons, deadzone, & dynamic mouse speed
 
 > [!IMPORTANT]
 >This program is offered under https://choosealicense.com/licenses/cc0-1.0/
