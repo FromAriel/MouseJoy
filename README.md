@@ -3,7 +3,7 @@
 
 This program is offered under https://choosealicense.com/licenses/cc0-1.0/
 
-Download the program from this link and run https://github.com/FromAriel/MouseJoy/blob/main/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip
+Download the program from this link and run [https://github.com/FromAriel/MouseJoy/blob/main/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip](https://github.com/FromAriel/MouseJoy/blob/6d98a247f9fcab87ae184cebe5c595648594a4f5/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip)
 
 ## Controls are pretty self explanatory.
 
