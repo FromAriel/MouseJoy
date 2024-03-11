@@ -8,7 +8,7 @@ Download the program from this link and run [https://github.com/FromAriel/MouseJ
 ## Controls are pretty self explanatory.
 
 - **Deadzone** is set on luanch to equal the current Joystick polling amount at launch. Can be adjusted at any time.
-- **Scroll Mult** is the speed of scrolling the current window with the right stick. (Defualt 14)
+- **Mouse Scroll Mult** is the speed of scrolling the current window with the right stick. (Defualt 14)
 - **Left stick** controls mouse movement 
 - **Left trigger** increases move speed by upto 2x dpending on how far the trigger is pulled.
 - **Right trigger** decreases move speed by upto 0.5x dpending on how far the trigger is pulled.
