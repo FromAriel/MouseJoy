@@ -8,6 +8,7 @@ Download the program from this link and run [https://github.com/FromAriel/MouseJ
 ## Controls are pretty self explanatory.
 
 - **Deadzone** is set on luanch to equal the current Joystick polling amount at launch. Can be adjusted at any time.
+- **Scrollmult** is the speed of scrolling the current window with the right stick. (Defualt 14)
 - **Left stick** controls mouse movement 
 - **Left trigger** increases move speed by upto 2x dpending on how far the trigger is pulled.
 - **Right trigger** decreases move speed by upto 0.5x dpending on how far the trigger is pulled.
@@ -16,5 +17,6 @@ Download the program from this link and run [https://github.com/FromAriel/MouseJ
 - **Select** is Esc Key
 - **Start + Select** to enable / disable mouse control (Defualt = On)
 
-![image](https://github.com/FromAriel/MouseJoy/assets/52693758/5f8a952c-7278-4653-8ee1-af54fef4a741)
+![image](https://github.com/FromAriel/MouseJoy/assets/52693758/b2dc7505-e431-412b-aea0-eb916a9f8ed0)
+
 
