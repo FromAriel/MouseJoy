@@ -29,23 +29,36 @@ namespace MouseJoy
 
         private void InitializeInstructionTextBox()
         {
-            TextBox instructionTextBox = new TextBox
+            RichTextBox instructionTextBox = new RichTextBox
             {
                 Location = new Point(10, 200), // Adjust the location as needed
-                Size = new Size(300, 190), // Adjust the size as needed
-                Text = "Instructions:" + Environment.NewLine +
-                       "- Left Trigger: Speed up mouse" + Environment.NewLine + Environment.NewLine +
-                       "- Right Trigger: Slow down mouse" + Environment.NewLine + Environment.NewLine +
-                       "- D-pad: Arrow keys" + Environment.NewLine + Environment.NewLine +
-                       "- Start: Enter key" + Environment.NewLine + Environment.NewLine +
-                       "- Select: Esc key",
+                Size = new Size(300, 250), // Adjust the size as needed
+                Text = "",
                 Multiline = true,
                 ReadOnly = true,
-                ScrollBars = ScrollBars.Vertical,
+                ScrollBars = RichTextBoxScrollBars.Vertical,
                 BorderStyle = BorderStyle.FixedSingle
             };
+
+            // Append and style "Instructions:" text
+            instructionTextBox.SelectionFont = new Font(instructionTextBox.Font, FontStyle.Bold);
+            instructionTextBox.SelectionFont = new Font(instructionTextBox.Font.FontFamily, 12, FontStyle.Bold); // Increase font size to 12 and make it bold
+            instructionTextBox.AppendText("Instructions:" + Environment.NewLine + Environment.NewLine);
+
+            // Reset the font style for the rest of the text and append it
+            instructionTextBox.SelectionFont = new Font(instructionTextBox.Font.FontFamily, 10, FontStyle.Regular); // Change to desired size and style
+            instructionTextBox.AppendText(
+                "- Left Trigger: Speed up mouse" + Environment.NewLine + Environment.NewLine +
+                "- Right Trigger: Slow down mouse" + Environment.NewLine + Environment.NewLine +
+                "- D-pad: Arrow keys" + Environment.NewLine + Environment.NewLine +
+                "- Start: Enter key" + Environment.NewLine + Environment.NewLine +
+                "- Select: Esc key" + Environment.NewLine + Environment.NewLine +
+                "- Start + Select Enable or Disable Joystick control" + Environment.NewLine +
+                "    (enabled by default)");
+
             this.Controls.Add(instructionTextBox);
         }
+
 
 
 
