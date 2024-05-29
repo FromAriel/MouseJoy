@@ -4,7 +4,7 @@
 > [!IMPORTANT]
 >This program is offered under https://choosealicense.com/licenses/cc0-1.0/
 
-Download the program by right clicking and saving this link then extract and run [https://github.com/FromAriel/MouseJoy/blob/main/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip](https://github.com/FromAriel/MouseJoy/blob/6d98a247f9fcab87ae184cebe5c595648594a4f5/MouseJoy/bin/x64/Release/MouseJoy%20Release.zip)
+Download the program by right clicking and saving this link then extract and run [https://github.com/FromAriel/MouseJoy/blob/10d175b3bb7efda38ed109cc94ed44fcd651636f/MouseJoy/bin/x64/Release/Mousejoy.zip](https://github.com/FromAriel/MouseJoy/blob/10d175b3bb7efda38ed109cc94ed44fcd651636f/MouseJoy/bin/x64/Release/Mousejoy.zip)
 > No intaller needed it runs from the extracted location.
 
 ## Controls are pretty self explanatory.
