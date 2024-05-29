@@ -18,7 +18,9 @@ Download the program by right clicking and saving this link then extract and run
 - **Start** is Enter Key
 - **Select** is Esc Key
 - **Start + Select** to enable / disable mouse control (Defualt = On)
+- **Controller** lets you select which controller to use to control the mouse if you have more than one.
 
-![image](https://github.com/FromAriel/MouseJoy/assets/52693758/b2dc7505-e431-412b-aea0-eb916a9f8ed0)
+![image](https://github.com/FromAriel/MouseJoy/assets/52693758/3b3a1c2c-d5cf-417a-9426-933491ac5efe)
+)
 
 
